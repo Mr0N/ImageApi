@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageApi", "ImageApi\ImageA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{582D06B8-75C7-4AF0-B6C8-6E7439D575C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageApiGrpc", "ImageApiGrpc\ImageApiGrpc.csproj", "{7FC35F3D-33A8-4A40-955D-CD1BFF016856}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{582D06B8-75C7-4AF0-B6C8-6E7439D575C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{582D06B8-75C7-4AF0-B6C8-6E7439D575C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{582D06B8-75C7-4AF0-B6C8-6E7439D575C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC35F3D-33A8-4A40-955D-CD1BFF016856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC35F3D-33A8-4A40-955D-CD1BFF016856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC35F3D-33A8-4A40-955D-CD1BFF016856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC35F3D-33A8-4A40-955D-CD1BFF016856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
