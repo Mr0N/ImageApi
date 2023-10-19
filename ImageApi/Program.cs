@@ -1,15 +1,18 @@
+using Logica.Interface;
+using Logica.Service;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
+builder.Services.AddLogging();
 builder.Services.AddSwaggerGen(a =>
 {
     a.SwaggerDoc("v1", new OpenApiInfo { Title = "ImageAi", Version = "v1" });
 });
 //builder.Services.AddSw
-
+builder.Services.AddTransient<IChangeImageSize, ChangeImageSize>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -26,10 +29,10 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-
-app.MapControllerRoute(
-name: "default",
-pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllers();
+//app.MapControllerRoute(
+//name: "default",
+//pattern: "{controller=Home}/{action=Index}/{id?}");
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
